@@ -1,0 +1,24 @@
+Using terminal and node, run index.js and cal.js = Called Common JS Module System
+
+  node index.js
+    Run index.js and show the result in terminal
+  
+  node cal.js
+    Run cal.js and show the result in terminal
+  
+  1. Exporting Module (On cal.js)
+    module.exports = {
+      moduleName: "cal module",
+      add: add(1,2),
+      sub: sub(5,4),
+    };
+    
+  2. Receiving Module (On index.js)
+    const cal ("./cal"); (<- 경로)
+    console.log(cal);
+    console.log(cal.add(1,2));
+    console.log(cal.sub(5,4));
+
+    
+  3. Run & check the result (On terminal)
+    node index.js
